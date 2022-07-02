@@ -12,7 +12,7 @@ class Loading extends StatefulWidget {
 class _LoadingState extends State<Loading> {
 
   void setupWorldTime() async {
-    WorldTime instance = WorldTime(location: 'Dhaka', flag: 'bangladesh.png', url: '/Asia/Dhaka');
+    WorldTime instance = WorldTime(location: 'Dhaka', flag: 'asian_flag/bangladesh.png', url: '/Asia/Dhaka');
     await instance.getTime();
     Navigator.pushReplacementNamed(context, '/home', arguments: {
       'location': instance.location,
